@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LinguaScribe | Live transcription</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main class="shell">
+    <header>
+        <p class="eyebrow">PROCucev • AI TECH ASSIGNMENT</p>
+        <h1>Lingua<span>Scribe</span></h1>
+        <p class="subtitle">Multilingual speech, captured in real time.</p>
+    </header>
+
+    <section class="recorder card">
+        <div class="toolbar">
+            <label for="language">Recognition language</label>
+            <select id="language">
+                <option value="en-IN">English (India)</option>
+                <option value="hi-IN">Hindi</option>
+                <option value="en-US">English (US)</option>
+                <option value="mr-IN">Marathi</option>
+            </select>
+            <span id="status" class="status">Ready to listen</span>
+        </div>
+        <textarea id="liveText" placeholder="Your words will appear here as you speak..." aria-label="Live transcript"></textarea>
+        <div class="actions">
+            <button id="record" class="primary">● Start listening</button>
+            <button id="clear" class="secondary">Clear</button>
+            <button id="save" class="secondary">Save transcript</button>
+        </div>
+        <p id="support" class="hint"></p>
+    </section>
+
+    <section class="history">
+        <div class="section-heading">
+            <div><p class="eyebrow">YOUR WORKSPACE</p><h2>Transcript history</h2></div>
+            <button id="refresh" class="icon-button" title="Refresh history">↻</button>
+        </div>
+        <div id="historyList" class="history-list"><p class="empty">No saved transcripts yet.</p></div>
+    </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

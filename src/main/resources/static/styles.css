@@ -1,0 +1,16 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #e8edf7; background: #10131b; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 90% 0%, #263557 0, transparent 38%), #10131b; }
+.shell { width: min(960px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0; }
+.eyebrow { color: #8ba7ff; font-size: 11px; font-weight: 800; letter-spacing: .16em; margin: 0 0 14px; }
+h1 { font-size: clamp(42px, 8vw, 78px); letter-spacing: -.07em; line-height: .95; margin: 0; }
+h1 span { color: #8ba7ff; } .subtitle { color: #98a1b5; font-size: 18px; margin: 18px 0 40px; }
+.card { background: rgba(25, 30, 43, .9); border: 1px solid #30394d; border-radius: 20px; padding: 24px; box-shadow: 0 18px 60px #07091166; }
+.toolbar, .actions, .section-heading { align-items: center; display: flex; gap: 12px; }
+label { color: #aeb8cd; font-size: 13px; font-weight: 600; } select { background: #20283a; border: 1px solid #3a4862; border-radius: 8px; color: #e8edf7; padding: 9px; }
+.status { color: #77d7a4; font-size: 13px; margin-left: auto; } textarea { background: #151b28; border: 1px solid #30394d; border-radius: 12px; color: #eef2fa; display: block; font: 20px/1.6 inherit; height: 230px; margin: 20px 0; padding: 20px; resize: vertical; width: 100%; }
+button { border: 0; border-radius: 9px; cursor: pointer; font: inherit; font-weight: 700; padding: 11px 17px; } button:disabled { cursor: not-allowed; opacity: .5; }
+.primary { background: #8ba7ff; color: #10131b; } .secondary, .icon-button { background: #252e42; color: #d7e0f2; } .hint, .empty { color: #7f899e; font-size: 13px; }
+.history { margin-top: 58px; } h2 { font-size: 30px; letter-spacing: -.04em; margin: 0 0 20px; }.icon-button { margin-left: auto; padding: 7px 12px; font-size: 20px; }
+.history-list { display: grid; gap: 12px; }.history-item { background: #191f2d; border: 1px solid #2d374b; border-radius: 12px; padding: 18px; }.history-item h3 { margin: 0 0 7px; }.history-item p { color: #aeb8cd; line-height: 1.5; margin: 0 0 12px; white-space: pre-wrap; }.meta { color: #75829b; font-size: 12px; }.item-actions { float: right; }.item-actions button { background: transparent; color: #8ba7ff; padding: 0 0 0 12px; }
+@media (max-width: 600px) { .shell { padding: 36px 0; width: min(100% - 24px, 960px); } .toolbar { align-items: flex-start; flex-wrap: wrap; } .status { margin-left: 0; width: 100%; } .actions { flex-wrap: wrap; } }
